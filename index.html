@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>raven</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel=”icon” href=”favicon.ico”>
+</head>
+<body>
+    <img src="first.png" class="first">
+    <img src="second.png" class="second">
+    <img src="bottom engines.png" class="btm_engines">
+    <img src="bottom engines.png" class="btm_engines_back">
+    <img src="tank.png" class="tank">
+    <img src="head.png" class="head">
+    <img src="head engine.png" class="head_engine">
+    <div class="second_info">
+        <h1>Вторая ступень</h1>
+        <p class="st">Статус: Заправка</p> 
+        <p class="pm">Загрузка топлива: 83% (~ 88 т)</p>
+        <p class="m">Текущая масса: (~ 93 т)</p>
+        <p>Проверка: нет данных</p>
+    </div>
+    <div class="head_info">
+        <h1>Модуль управления</h1>
+        <p class="st">Статус: Готов к работе</p>
+        <p>Проверка: нет данных</p>
+    </div>
+    <div class="head_engine_info">
+        <h1>Двигатель второй ступени</h1>
+        <p class="st">Статус: Осуществляется подключение</p>
+        <p>Проверка: нет данных</p>
+    </div>
+    <div class="tank_info">
+        <h1>Топливный бак первой ступени</h1>
+        <p style="color: red;">error code: 4326</p>
+        <p style="color: red;">Please contact the Assistant (https://t.me/eleday_bot) and send him the following message: "site error 4326". The chief programmer will answer you as soon as he is free</p>
+    </div>
+    <div class="btm_engines_info">
+        <h1>Двигатели первой ступени</h1>
+        <p class="st">Статус: Осуществляется подключение</p>
+        <p>Проверка: нет данных</p>
+    </div>
+    <div class="manage" style="opacity: 0; cursor: default;">
+        <h2>Отладка</h2>
+        <h3>Введите пароль Главного программиста</h3>
+        <input type="text" class="password">
+        <div class="hide">
+            <p style="color: red;">Обнаружена ошибка: the variable "n" turned out to be greater than the allowed limit (241>240):</p>
+            <textarea class="code">
+n = 0
+while os.path.getsize('tank_info' + name) == 48 or os.path.getsize('tank_info' + name) == 262144:
+    if n > 240:
+        bot.send_message(id, 'Произошла ошибка')
+        os.remove('tank_info' + name)
+        os.remove('tank_info' + name.replace('.log', ''))
+        raise
+    n += 1
+    time.sleep(1)
+            </textarea>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
